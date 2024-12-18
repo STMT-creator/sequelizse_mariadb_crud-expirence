@@ -1,0 +1,22 @@
+{
+  "name": "client_mngment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "mariadb를 활용한 정보 관리 시스템",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mariadb": "^3.4.0",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
