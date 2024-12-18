@@ -3,6 +3,9 @@ import indexRouter from './routes/index.js';
 import userRouter from './routes/user.js';
 import db from './models/index.js';
 
+// Model Synchronization : 모델-DB 동기화
+db.sequelize.sync({force:false})
+
 const app = express();
 const port = process.env.PORT || 3000;
 
