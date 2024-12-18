@@ -29,7 +29,7 @@ class User extends Sequelize.Model {
             paranoid: false,
             modelName: 'User', // model의 실제 이름
             tableName: 'users', // table(표)의 이름
-            charset: 'utf8mf4',
+            charset: 'utf8mb4',
             collate: 'utf8mb4_general_ci'
         });
     }
