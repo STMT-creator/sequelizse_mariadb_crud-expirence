@@ -1,7 +1,7 @@
 import express from 'express';
 import nunjucks from 'nunjucks';
 import indexRouter from './routes/index.js';
-import userRouter from './routes/user.js';
+import usersRouter from './routes/user.js';
 import db from './models/index.js';
 const port = process.env.PORT || 3000;
 const app = express();
@@ -22,7 +22,7 @@ app.use(express.json()); // json 파싱
 app.use(express.urlencoded({ extended: true })); // form 데이터 파싱
 
 app.use('/', indexRouter);
-app.use('/users', userRouter);
+app.use('/users', usersRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
