@@ -4,7 +4,8 @@
     "password": "demo1234",
     "database": "demo_db",
     "host": "127.0.0.1",
-    "dialect": "mariadb"
+    "dialect": "mariadb",
+    "logging": false
   },
   "test": {
     "username": "root",
