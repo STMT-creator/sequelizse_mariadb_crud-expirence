@@ -1,1 +1,25 @@
 @charset "uft-8";
+
+html {
+    font-size: 20px;
+}
+legend {
+    display: none;
+}
+/* css 선택자 정의 */
+
+.container {
+    max-width: 100%;
+}
+.mx-auto {
+    margin: 0 auto;
+}
+.wide {
+    width: 50rem
+}
+.wide form {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;
+}
