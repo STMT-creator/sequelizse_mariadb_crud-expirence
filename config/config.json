@@ -5,6 +5,7 @@
     "database": "demo_db",
     "host": "127.0.0.1",
     "dialect": "mariadb",
+    "timezone": "+09:00",
     "logging": false
   },
   "test": {
