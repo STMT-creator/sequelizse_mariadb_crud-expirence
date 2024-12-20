@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "mariadb를 활용한 정보 관리 시스템",
   "dependencies": {
+    "chokidar": "^3.6.0",
     "express": "^4.21.2",
     "mariadb": "^3.4.0",
     "nunjucks": "^3.2.4",
