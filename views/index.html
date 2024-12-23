@@ -41,10 +41,10 @@
             <tbody>
                 {% for user in users %}
                 <tr>
-                    <th>{{ user.id }}</th>
-                    <th>{{ user.name }}</th>
-                    <th>{{ user.age }}</th>
-                    <th>{{ "기혼" if user.married else "미혼" }}</th>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.age }}</td>
+                    <td>{{ "기혼" if user.married else "미혼" }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
