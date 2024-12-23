@@ -20,7 +20,7 @@
                     <label for="age">나이</label>
                     <input type="number" id="age" name="age">
                 </div>
-                <div>
+                <div class="d-flex">
                     <label for="married">결혼여부</label>
                     <input type="checkbox" id="married" name="married">
                 </div>
@@ -28,6 +28,29 @@
             </fieldset>
         </form>
     </div>
+    <div class="wide mx-auto my-1">
+        <table id="user-list">
+            <thead>
+                <tr>
+                    <th>연번</th>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>기혼여부</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <th>{{ user.id }}</th>
+                    <th>{{ user.name }}</th>
+                    <th>{{ user.age }}</th>
+                    <th>{{ "기혼" if user.married else "미혼" }}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/main.js"></script>
 </body>
 </html>
