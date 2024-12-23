@@ -1,12 +1,22 @@
 @charset "uft-8";
 
+
+/* 공통 태그 선택자 */
 html {
     font-size: 20px;
 }
 legend {
     display: none;
 }
-/* css 선택자 정의 */
+table {
+    display: table;
+    width: 100%;
+}
+th, td {
+    text-align: center !important;
+}
+
+/* css 선택자 */
 
 .container {
     max-width: 100%;
@@ -22,4 +32,19 @@ legend {
 }
 .text-center {
     text-align: center;
+}
+.d-flex {
+    display: flex;
+}
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
