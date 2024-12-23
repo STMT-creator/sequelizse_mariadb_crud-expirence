@@ -1,3 +1,4 @@
+import express from 'express';
 import User from '../models/User.js';
 /**
  * CRUD 작명을 잘해야한다.
@@ -18,4 +19,15 @@ const addUser = async (req, res) => {
   }
 };
 
-export default { addUser };
+const getUsers = async (req, res) => {
+  try {
+    const users = await User.findAll({
+      order: [['id', 'DESC']]
+    });
+    res.status(201).json(users);
+  } catch(err) {
+    console.log(err)
+  }
+}
+
+export default { addUser, getUsers };
